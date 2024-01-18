@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Navbar from "./components/Navbar";
+import RegisterLandingPage from "./views/RegisterLandingPage";
+import RoutesTree from './routes/Routes';
+import SidaBar from './components/SideBar/SidaBar';
+
+// redux
+import { store } from './App/store';
+import { Provider } from 'react-redux';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <Navbar />
+        <Provider store={store}>
+          <RoutesTree>
+            <RegisterLandingPage />
+          </RoutesTree>
+        </Provider>
+      </div>
+  
   );
 }
 
 export default App;
+ 
