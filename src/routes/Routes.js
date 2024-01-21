@@ -7,7 +7,7 @@ import NotFound from '../views/NotFound';
 import Home from '../views/auth/Home';
 import PrivateRoutes from './PrivateRoutes';
 import HomeAdmin from '../views/admin/HomeAdmin';
-import Products from '../views/admin/Products';
+import Products from '../views/admin/Products/Products';
 import Users from '../views/admin/Users';
 import Roles from '../views/admin/Roles';
 import Dashboard from '../views/admin/Dashboard';

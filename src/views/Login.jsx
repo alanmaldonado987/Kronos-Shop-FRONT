@@ -26,7 +26,7 @@ import { loginUser, logoutUser } from '../App/reducers/user/userSlice';
 
 const Login = () => {
 
-  const { email, toke, role, isOnline } = useSelector(state => state.user);
+  
   
   const dispatch = useDispatch(); //Disparar actions al reducer (para que modifique el estado)
   
@@ -92,7 +92,6 @@ const Login = () => {
 
   return (
     <Box className='loginContainerAll'>
-      {email}
       <Box className='loginContainer' >
         <form className='loginForm' onSubmit={handleSubmit(onSubmit)}>
           <h4>Bienvenido de vuelta!</h4>
